@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo03.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=gbk">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+
+  </head>
+  
+  <body>
+    <form action=" http://www.baidu.com" method="POST">
+    	<input type="button"  value="提交" />
+    
+    </form>
+    
+    <script>
+
+	//定位提交按钮
+	var  inputElement=document.getElementsByTagName("input")[0];
+	//为按钮添加单机事件
+	inputElement.onclick=function(){
+		
+		//定位标签
+		//forms表示document对象中所有表单的集合，通过下标引用不同的表单，
+		var formElement=document.forms[0];
+		
+		//提交表单，提交到action属性指定的地方
+		formElement.submit();
+	
+	};
+</script>
+    
+  </body>
+</html>
